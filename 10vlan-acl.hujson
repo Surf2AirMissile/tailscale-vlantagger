@@ -1,12 +1,12 @@
 {
 	"groups": {
-		// You are in group:vlantagger
-		"group:vlantagger": ["[Insert-Your-Email@email.com"],
+    // You are in group:vlantagger
+		"group:vlantagger": ["[Insert-Your-Tailscale-Email@email.com"],
 	},
 	"acls": [
-		// devices tagged tag:vlan1 can access all devices tagged vlan1
+    // devices tagged tag:vlan1 can access all devices tagged vlan1
 		{"action": "accept", "src": ["tag:vlan1"], "dst": ["tag:vlan1:*"]},
-		// devices tagged tag:vlan2 can access all devices tagged vlan2
+    // devices tagged tag:vlan2 can access all devices tagged vlan2
 		{"action": "accept", "src": ["tag:vlan2"], "dst": ["tag:vlan2:*"]},
     // devices tagged tag:vlan3 can access all devices tagged vlan3
 		{"action": "accept", "src": ["tag:vlan3"], "dst": ["tag:vlan3:*"]},
@@ -27,8 +27,8 @@
     
 	],
 	"tagOwners": {
-		// users in group:vlantagger can apply the tag tag:vlan1-10
-		"tag:vlan1": ["group:vlantagger"],
+    // users in group:vlantagger can apply the tag tag:vlan1-10
+    "tag:vlan1": ["group:vlantagger"],
     "tag:vlan2": ["group:vlantagger"],
     "tag:vlan3": ["group:vlantagger"],
     "tag:vlan4": ["group:vlantagger"],
