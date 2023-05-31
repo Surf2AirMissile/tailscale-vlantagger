@@ -1,0 +1,43 @@
+{
+	"groups": {
+		// You are in group:vlantagger
+		"group:vlantagger": ["[Insert-Your-Email@email.com"],
+	},
+	"acls": [
+		// devices tagged tag:vlan1 can access all devices tagged vlan1
+		{"action": "accept", "src": ["tag:vlan1"], "dst": ["tag:vlan1:*"]},
+		// devices tagged tag:vlan2 can access all devices tagged vlan2
+		{"action": "accept", "src": ["tag:vlan2"], "dst": ["tag:vlan2:*"]},
+    // devices tagged tag:vlan3 can access all devices tagged vlan3
+		{"action": "accept", "src": ["tag:vlan3"], "dst": ["tag:vlan3:*"]},
+    // devices tagged tag:vlan4 can access all devices tagged vlan4
+		{"action": "accept", "src": ["tag:vlan4"], "dst": ["tag:vlan4:*"]},
+    // devices tagged tag:vlan5 can access all devices tagged vlan5
+		{"action": "accept", "src": ["tag:vlan5"], "dst": ["tag:vlan5:*"]},
+    // devices tagged tag:vlan6 can access all devices tagged vlan6
+		{"action": "accept", "src": ["tag:vlan6"], "dst": ["tag:vlan6:*"]},
+    // devices tagged tag:vlan7 can access all devices tagged vlan7
+		{"action": "accept", "src": ["tag:vlan7"], "dst": ["tag:vlan7:*"]},
+    // devices tagged tag:vlan8 can access all devices tagged vlan8
+		{"action": "accept", "src": ["tag:vlan8"], "dst": ["tag:vlan8:*"]},
+    // devices tagged tag:vlan9 can access all devices tagged vlan9
+		{"action": "accept", "src": ["tag:vlan9"], "dst": ["tag:vlan9:*"]},
+    // devices tagged tag:vlan10 can access all devices tagged vlan10
+		{"action": "accept", "src": ["tag:vlan10"], "dst": ["tag:vlan10:*"]},
+    
+	],
+	"tagOwners": {
+		// users in group:vlantagger can apply the tag tag:vlan1-10
+		"tag:vlan1": ["group:vlantagger"],
+    "tag:vlan2": ["group:vlantagger"],
+    "tag:vlan3": ["group:vlantagger"],
+    "tag:vlan4": ["group:vlantagger"],
+    "tag:vlan5": ["group:vlantagger"],
+    "tag:vlan6": ["group:vlantagger"],
+    "tag:vlan7": ["group:vlantagger"],
+    "tag:vlan8": ["group:vlantagger"],
+    "tag:vlan9": ["group:vlantagger"],
+    "tag:vlan10": ["group:vlantagger"],
+	},
+	],
+}
