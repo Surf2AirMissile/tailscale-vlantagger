@@ -1,6 +1,6 @@
 {
 	"groups": {
-    // You are in group:vlantagger
+    // You are in group:vlantagger (Must enter your email below)
 		"group:vlantagger": ["[Insert-Your-Tailscale-Email@email.com"],
 	},
 	"acls": [
