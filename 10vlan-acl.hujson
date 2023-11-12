@@ -39,5 +39,4 @@
     "tag:vlan9": ["group:vlantagger"],
     "tag:vlan10": ["group:vlantagger"],
 	},
-	],
 }
